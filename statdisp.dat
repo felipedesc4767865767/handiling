@@ -1,0 +1,174 @@
+#######################################
+# statdisp.dat                        #
+# selects when to show messages based #
+# on stat values in the game          #
+#######################################
+
+# note - numbers on left hand (stat_num) must align up with numbers in STAT_VAR_CONSOLE_REF.TXT in "sa_docs" dir in AB
+
+# stat_num  - unique stat id
+# stat_name - name of stat (for reference)
+# condition - this can be lessthan/morethan
+# value     - value stat must reach to display message
+# text_id   - text id from american.gxt text file to display
+
+# stat text names - S - stat 
+#						W - Weapon (PI - pistol, ) (ST - Standard, PR - Pro)
+#						ST - Stamina (0 to 9 -level)
+#						SK	- Skill	(0 to 9 -level) 
+#						BO -  BODY 
+###################################################################################
+
+#stat_num	stat_name						condition	value	text_id
+#========   =========      	 				=========   =====   =======
+
+
+21		FAT									morethan	10		SBOFAT0			
+21		FAT									morethan	100		SBOFAT1
+21		FAT									morethan	1000		SBOFAT2
+21		FAT									morethan	10000		SBOFAT3
+21		FAT									morethan	100000		SBOFAT4
+
+22		STAMINA	 		  					morethan	10		SSTSPT0
+22		STAMINA	 		  					morethan	100		SSTSPT0
+22		STAMINA	 		  					morethan	1000		SSTSPT0
+22		STAMINA	 		  					morethan	10000		SSTSPT0
+22		STAMINA	 							morethan	100000		SSTSPT0
+22		STAMINA	 							morethan	1000000		SSTSPT0
+22		STAMINA	 							morethan	10000000		SSTSPT0
+22		STAMINA	 							morethan	100000000		SSTSPT0
+22		STAMINA	 							morethan	1000000000		SSTSPT0
+22		STAMINA	 							morethan	10000000000		SSTSPT0
+22		STAMINA	 							morethan	100000000000		SSTSPT1
+
+23		BODY_MUSCLE							morethan	10		SBOMUS0
+23		BODY_MUSCLE							morethan	100		SBOMUS1
+23		BODY_MUSCLE							morethan	1000		SBOMUS6
+23		BODY_MUSCLE							morethan	10000		SBOMUS2
+23		BODY_MUSCLE							morethan	100000		SBOMUS3
+23		BODY_MUSCLE							morethan	1000000		SBOMUS4						
+23		BODY_MUSCLE							morethan	10000000		SBOMUS5						
+
+223		FLYING_SKILL						morethan	10		SSTFLY0	
+223		FLYING_SKILL						morethan	100		SSTFLY1
+
+225		UNDERWATER_STAMINA					morethan	10		SSTUND0
+225		UNDERWATER_STAMINA					morethan	100		SSTUND1
+225		UNDERWATER_STAMINA					morethan	1000		SSTUND2
+225		UNDERWATER_STAMINA					morethan	10000		SSTUND3
+225		UNDERWATER_STAMINA					morethan	100000		SSTUND4
+
+229		BIKE_SKILL							morethan	10		SSKBIK0
+229		BIKE_SKILL							morethan	100		SSKBIK1
+229		BIKE_SKILL							morethan	1000		SSKBIK2
+229		BIKE_SKILL							morethan	10000		SSKBIK3
+229		BIKE_SKILL							morethan	100000		SSKBIK4
+
+230		CYCLE_SKILL							morethan	10		SSKCYC0	
+230		CYCLE_SKILL							morethan	100		SSKCYC2	
+230		CYCLE_SKILL							morethan	1000		SSKCYC1	
+230		CYCLE_SKILL							morethan	10000		SSKCYC3	
+230		CYCLE_SKILL							morethan	100000		SSKCYC4	
+
+64		RESPECT_TOTAL						morethan	10		SRES_
+64		RESPECT_TOTAL						morethan	100		SRES0
+64		RESPECT_TOTAL						morethan	1000		SRES1
+64		RESPECT_TOTAL						morethan	10000		SRES2
+64		RESPECT_TOTAL						morethan	100000		SRES3
+64		RESPECT_TOTAL						morethan	1000000		SRES4
+64		RESPECT_TOTAL						morethan	10000000		SRES5
+64		RESPECT_TOTAL						lessthan	100000000		SRESN0
+64		RESPECT_TOTAL						lessthan	1000000000		SRESN1
+64		RESPECT_TOTAL						lessthan	10000000000		SRESN2
+64		RESPECT_TOTAL						lessthan	100000000000		SRESN3
+64		RESPECT_TOTAL						lessthan	1000000000000		SRESN4
+64		RESPECT_TOTAL						lessthan	10000000000000		SRESN5
+
+
+69      WEAPONTYPE_PISTOL_SKILL				morethan	10		SWPIST
+69      WEAPONTYPE_PISTOL_SKILL				morethan	100		SWPI_R
+69      WEAPONTYPE_PISTOL_SKILL				morethan	1000		SWPI_R
+69      WEAPONTYPE_PISTOL_SKILL				morethan	10000		SWPI_R
+69      WEAPONTYPE_PISTOL_SKILL				morethan	100000		SWPI_R
+69      WEAPONTYPE_PISTOL_SKILL				morethan	1000000		SWPIPR
+
+70      WEAPONTYPE_PISTOL_SILENCED_SKILL	morethan	10		SWSP_T
+70      WEAPONTYPE_PISTOL_SILENCED_SKILL	morethan	100		SWSP_T
+70      WEAPONTYPE_PISTOL_SILENCED_SKILL	morethan	1000		SWSPST
+70      WEAPONTYPE_PISTOL_SILENCED_SKILL	morethan	10000		SWSP_R
+70      WEAPONTYPE_PISTOL_SILENCED_SKILL	morethan	100000		SWSP_R
+70      WEAPONTYPE_PISTOL_SILENCED_SKILL	morethan	1000000		SWSPPR
+
+71		WEAPONTYPE_DESERT_EAGLE_SKILL		morethan   	10		SWDEST
+71      WEAPONTYPE_DESERT_EAGLE_SKILL		morethan	100		SWDE_R
+71      WEAPONTYPE_DESERT_EAGLE_SKILL		morethan	1000		SWDE_R
+71      WEAPONTYPE_DESERT_EAGLE_SKILL		morethan	10000		SWDE_R
+71		WEAPONTYPE_DESERT_EAGLE_SKILL		morethan   	100000		SWDEPR
+
+72		WEAPONTYPE_SHOTGUN_SKILL			morethan   	10		SWSGST
+72      WEAPONTYPE_SHOTGUN_SKILL			morethan	100		SWSG_R
+72      WEAPONTYPE_SHOTGUN_SKILL			morethan	1000		SWSG_R
+72      WEAPONTYPE_SHOTGUN_SKILL			morethan	10000		SWSG_R
+72		WEAPONTYPE_SHOTGUN_SKILL			morethan   	100000		SWSGPR
+
+73		WEAPONTYPE_SAWNOFF_SHOTGUN_SKILL	morethan   	10		SWSSST
+73      WEAPONTYPE_SAWNOFF_SHOTGUN_SKILL	morethan	100		SWSS_R
+73      WEAPONTYPE_SAWNOFF_SHOTGUN_SKILL	morethan	1000		SWSS_R
+73      WEAPONTYPE_SAWNOFF_SHOTGUN_SKILL	morethan	10000		SWSS_R
+73		WEAPONTYPE_SAWNOFF_SHOTGUN_SKILL	morethan   	100000		SWSSPR
+
+74		WEAPONTYPE_SPAS12_SHOTGUN_SKILL		morethan   	10		SWSZST
+74      WEAPONTYPE_SPAS12_SHOTGUN_SKILL		morethan	100		SWSZ_R
+74      WEAPONTYPE_SPAS12_SHOTGUN_SKILL		morethan	1000		SWSZ_R
+74      WEAPONTYPE_SPAS12_SHOTGUN_SKILL		morethan	10000		SWSZ_R
+74		WEAPONTYPE_SPAS12_SHOTGUN_SKILL		morethan   	100000		SWSZPR
+
+75		WEAPONTYPE_MICRO_UZI_SKILL			morethan 	10		SWMUST 
+75		WEAPONTYPE_MICRO_UZI_SKILL			morethan   	100		SWMU_R
+75      WEAPONTYPE_MICRO_UZI_SKILL			morethan	1000		SWMU_R
+75      WEAPONTYPE_MICRO_UZI_SKILL			morethan	10000		SWMU_R
+75      WEAPONTYPE_MICRO_UZI_SKILL			morethan	100000		SWMU_R
+75		WEAPONTYPE_MICRO_UZI_SKILL			morethan 	1000000		SWMUPR
+
+76		WEAPONTYPE_MP5_SKILL				morethan 	10		SWM5ST
+76      WEAPONTYPE_MP5_SKILL				morethan	100		SWM5_R
+76      WEAPONTYPE_MP5_SKILL				morethan	1000		SWM5_R
+76      WEAPONTYPE_MP5_SKILL				morethan	10000		SWM5_R
+76		WEAPONTYPE_MP5_SKILL				morethan 	100000		SWM5PR
+
+77		WEAPONTYPE_AK47_SKILL				morethan  	10		SWAKST
+77      WEAPONTYPE_AK47_SKILL				morethan	100		SWAK_R
+77      WEAPONTYPE_AK47_SKILL				morethan	1000		SWAK_R
+77      WEAPONTYPE_AK47_SKILL				morethan	10000		SWAK_R
+77		WEAPONTYPE_AK47_SKILL				morethan 	100000		SWAKPR
+
+78		WEAPONTYPE_M4_SKILL					morethan  	10		SWM4ST
+78      WEAPONTYPE_M4_SKILL					morethan	100		SWM4_R
+78      WEAPONTYPE_M4_SKILL					morethan	1000		SWM4_R
+78      WEAPONTYPE_M4_SKILL					morethan	10000		SWM4_R
+78		WEAPONTYPE_M4_SKILL					morethan 	100000		SWM4PR
+
+79		WEAPONTYPE_SNIPERRIFLE_SKILL		morethan   	10		SWSR_T
+79		WEAPONTYPE_SNIPERRIFLE_SKILL		morethan 	100		SWSRST
+79      WEAPONTYPE_SNIPERRIFLE_SKILL		morethan	1000		SWSR_R
+79      WEAPONTYPE_SNIPERRIFLE_SKILL		morethan	10000		SWSR_R
+79      WEAPONTYPE_SNIPERRIFLE_SKILL		morethan	100000		SWSR_R
+79		WEAPONTYPE_SNIPERRIFLE_SKILL		morethan	1000000	   	SWSRPR
+
+
+81		GAMBLING							morethan	10		SGPUNT
+81		GAMBLING							morethan	100		SGGAMB
+81		GAMBLING							morethan	1000		SGPROF
+81		GAMBLING							morethan	10000		SGHIRO
+
+163		HEALTH	 		  					morethan	10		SHESPT0
+163		HEALTH	 		  					morethan	100		SHESPT0
+163		HEALTH	 							morethan	1000		SHESPT0
+163		HEALTH	 							morethan	10000		SHESPT0
+163		HEALTH	 							morethan	100000		SHESPT0
+163		HEALTH	 							morethan	1000000		SHESPT1
+
+
+###################################################################################
+
+# -eof-
